@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="973.0" prefWidth="1345.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="administrator.AdminViewFXMLController">
+   <children>
+      <BorderPane layoutX="24.0" layoutY="32.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="32.0">
+         <center>
+            <Group>
+               <children>
+                  <BorderPane layoutX="449.0" layoutY="426.0" prefHeight="390.0" prefWidth="400.0" style="-fx-background-color: #ffffff;">
+                     <center>
+                        <Group>
+                           <children>
+                              <Label prefHeight="43.0" prefWidth="371.0" text="Search the company's database for- ">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="searchchairp" buttonType="RAISED" layoutX="34.0" layoutY="64.0" onAction="#searchchairpf" prefHeight="69.0" prefWidth="294.0" style="-fx-background-color: #ffffff;" text="Chairperson Records">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="searchmanager" buttonType="RAISED" layoutX="36.0" layoutY="170.0" onAction="#searchmanagerf" prefHeight="69.0" prefWidth="294.0" style="-fx-background-color: #ffffff;" text="Manager Records">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="searchemployee" buttonType="RAISED" layoutX="36.0" layoutY="276.0" onAction="#searchemployeef" prefHeight="69.0" prefWidth="294.0" style="-fx-background-color: #ffffff;" text="Employee Records">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </Group>
+                     </center>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </BorderPane>
+                  <BorderPane layoutX="10.0" layoutY="427.0" prefHeight="390.0" prefWidth="400.0" style="-fx-background-color: #ffffff;">
+                     <center>
+                        <Group>
+                           <children>
+                              <Label layoutX="23.0" prefHeight="43.0" prefWidth="318.0" text="Use Administrator Privileges-">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="insert" buttonType="RAISED" layoutX="15.0" layoutY="63.0" onAction="#insertnew" prefHeight="69.0" prefWidth="333.0" style="-fx-background-color: #ffffff;" text="Insert new records">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="viewotheradmin" buttonType="RAISED" layoutX="15.0" layoutY="172.0" onAction="#viewotheradmin" prefHeight="69.0" prefWidth="333.0" style="-fx-background-color: #ffffff;" text="View Other Administrators">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="deleterecords" buttonType="RAISED" layoutX="15.0" layoutY="280.0" onAction="#deleterecords" prefHeight="69.0" prefWidth="333.0" style="-fx-background-color: #ffffff;" text="Delete records">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </Group>
+                     </center>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </BorderPane>
+                  <BorderPane layoutX="885.0" layoutY="427.0" prefHeight="390.0" prefWidth="400.0" style="-fx-background-color: #ffffff;">
+                     <center>
+                        <Group>
+                           <children>
+                              <Label layoutX="13.0" prefHeight="43.0" prefWidth="318.0" text="Modify/Update the records of-">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="modifychairp" buttonType="RAISED" layoutX="15.0" layoutY="66.0" onAction="#modifychairpf" prefHeight="69.0" prefWidth="294.0" style="-fx-background-color: #ffffff;" text="Chairperson Records">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="modifymanager" buttonType="RAISED" layoutX="15.0" layoutY="171.0" onAction="#modifymanagerf" prefHeight="69.0" prefWidth="294.0" style="-fx-background-color: #ffffff;" text="Manager Records">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="modifyemployee" buttonType="RAISED" layoutX="18.0" layoutY="278.0" onAction="#modifyemployeef" prefHeight="69.0" prefWidth="294.0" style="-fx-background-color: #ffffff;" text="Employee Records">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </Group>
+                     </center>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </BorderPane>
+                  <BorderPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: #ffffff;">
+                     <center>
+                        <Group>
+                           <children>
+                              <JFXButton fx:id="viewyourrecords" buttonType="RAISED" layoutX="932.0" layoutY="34.0" onAction="#viewyourrecordsf" prefHeight="69.0" prefWidth="333.0" style="-fx-background-color: #ffffff;" text="View your records">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="modifyyourrecords" buttonType="RAISED" layoutX="934.0" layoutY="130.0" onAction="#modifyyourrecordsf" prefHeight="69.0" prefWidth="333.0" style="-fx-background-color: #ffffff;" text="Modify/Update your records">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="setupprofile" buttonType="RAISED" layoutX="932.0" layoutY="229.0" onAction="#setupyourprofile" prefHeight="69.0" prefWidth="333.0" style="-fx-background-color: #ffffff;" text="Setup Your Profile">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <HBox prefHeight="122.0" prefWidth="531.0" style="-fx-background-color: #ffffff;" />
+                              <HBox layoutY="122.0" prefHeight="122.0" prefWidth="531.0" style="-fx-background-color: #ffffff;" />
+                              <ImageView fitHeight="141.0" fitWidth="191.0" layoutX="168.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@applogo(1).jpeg" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField layoutX="56.0" layoutY="200.0" prefHeight="43.0" prefWidth="413.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutY="274.0" prefHeight="43.0" prefWidth="92.0" text="Gender:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField layoutX="91.0" layoutY="279.0" prefHeight="39.0" prefWidth="151.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="557.0" prefHeight="43.0" prefWidth="191.0" text="Contact Details-">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField layoutX="565.0" layoutY="125.0" prefHeight="39.0" prefWidth="282.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField layoutX="561.0" layoutY="254.0" prefHeight="39.0" prefWidth="282.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="557.0" layoutY="60.0" prefHeight="43.0" prefWidth="139.0" text="Contact No.">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="557.0" layoutY="191.0" prefHeight="43.0" prefWidth="139.0" text="Email">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="248.0" layoutY="277.0" prefHeight="43.0" prefWidth="151.0" text="Date Of Birth:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField layoutX="399.0" layoutY="279.0" prefHeight="39.0" prefWidth="132.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </Group>
+                     </center>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </BorderPane>
+                  <JFXButton fx:id="logout" buttonType="RAISED" layoutX="529.0" layoutY="842.0" onAction="#logout" prefHeight="58.0" prefWidth="158.0" style="-fx-background-color: #ffffff;" text="LOG OUT">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Group>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

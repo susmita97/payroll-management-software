@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="973.0" prefWidth="1285.0" style="-fx-background-color: #c398e4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="leavedetails.LeaveDetailsFXML2Controller">
+   <children>
+      <HBox layoutX="10.0" layoutY="14.0" prefHeight="161.0" prefWidth="1221.0" style="-fx-background-color: #4b0082;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <BorderPane layoutX="22.0" layoutY="72.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <center>
+            <Group>
+               <children>
+                  <Label layoutX="253.0" layoutY="157.0" prefHeight="30.0" prefWidth="132.0" text="Leave Type :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="320.0" layoutY="220.0" prefHeight="45.0" prefWidth="69.0" text="Days :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="319.0" layoutY="321.0" text="Date :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="787.0" layoutY="333.0" prefHeight="30.0" prefWidth="29.0" text="To" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="164.0" layoutY="400.0" prefHeight="45.0" prefWidth="221.0" text="Leave Permitted for :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="153.0" layoutY="497.0" prefHeight="52.0" prefWidth="221.0" text="Leave Remaining for :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="111.0" layoutY="586.0" prefHeight="45.0" prefWidth="270.0" text="Leave Limit Exceeded for :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="670.0" prefHeight="45.0" prefWidth="118.0" text="Deduction :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="421.0" text="LEAVE DETAILS">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="days" focusColor="INDIGO" layoutX="470.0" layoutY="228.0" prefHeight="45.0" prefWidth="270.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="leavepermitted" focusColor="INDIGO" layoutX="469.0" layoutY="404.0" prefHeight="45.0" prefWidth="270.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="leaveremaining" focusColor="INDIGO" layoutX="467.0" layoutY="498.0" prefHeight="45.0" prefWidth="270.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="leavelimitexceeded" focusColor="INDIGO" layoutX="470.0" layoutY="581.0" prefHeight="45.0" prefWidth="270.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXRadioButton fx:id="yesd" layoutX="470.0" layoutY="679.0" prefHeight="34.0" prefWidth="108.0" style="-jfx-selected-color: #4b0082;" text="Yes">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="nod" layoutX="602.0" layoutY="681.0" prefHeight="29.0" prefWidth="108.0" style="-jfx-selected-color: #4b0082;" text="No">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXComboBox fx:id="leavetype" focusColor="INDIGO" layoutX="465.0" layoutY="147.0" prefHeight="45.0" prefWidth="270.0" />
+                  <Separator layoutY="74.0" prefHeight="4.0" prefWidth="1163.0" />
+                  <JFXButton buttonType="RAISED" layoutX="525.0" layoutY="749.0" prefHeight="68.0" prefWidth="151.0" style="-fx-background-color: #4b0082;" text="GO BACK" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="737.0" layoutY="684.0" prefHeight="25.0" prefWidth="101.0" text="Amount :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="amount" focusColor="INDIGO" layoutX="849.0" layoutY="666.0" prefHeight="45.0" prefWidth="167.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="date1" layoutX="471.0" layoutY="325.0" prefHeight="49.0" prefWidth="267.0" style="-jfx-default-color: #4b0082;" />
+                  <JFXDatePicker fx:id="date2" layoutX="866.0" layoutY="331.0" prefHeight="49.0" prefWidth="267.0" style="-jfx-default-color: #4b0082;" />
+               </children>
+            </Group>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

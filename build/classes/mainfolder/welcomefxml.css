@@ -1,0 +1,9 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-image: url('appback3.jpeg');
+    -fx-background-size: 100%
+        100%;
+}

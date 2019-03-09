@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="973.0" prefWidth="1285.0" styleClass="mainFxmlClass" stylesheets="@runsetup.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runsetup.RunSetupController">
+   <children>
+      <BorderPane layoutX="187.0" layoutY="43.0" prefHeight="417.0" prefWidth="963.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="513.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="43.0">
+         <center>
+            <Group>
+               <children>
+                  <Label fx:id="createdb" layoutX="94.0" layoutY="123.0" prefHeight="51.0" prefWidth="577.0" text="Creating Databases...Just a moment">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="done" layoutX="312.0" layoutY="225.0" prefHeight="60.0" prefWidth="106.0" text="Done">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="next" buttonType="RAISED" layoutX="671.0" layoutY="285.0" onAction="#runnext" prefHeight="69.0" prefWidth="125.0" style="-fx-background-color: #ffffff;" text="Next">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="920.0" text="WELCOME TO OUR PAYROLL SOFTWARE">
+                     <font>
+                        <Font name="System Italic" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </center>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </BorderPane>
+   </children>
+</AnchorPane>

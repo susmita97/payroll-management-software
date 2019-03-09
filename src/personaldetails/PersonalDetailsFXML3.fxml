@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="973.0" prefWidth="1285.0" style="-fx-background-color: #b9ddf8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personaldetails.PersonalDetailsFXML3Controller">
+   <children>
+      <HBox layoutX="10.0" layoutY="14.0" prefHeight="161.0" prefWidth="1221.0" style="-fx-background-color: #2196F3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <BorderPane layoutX="15.0" layoutY="78.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <center>
+            <Group>
+               <children>
+                  <Label layoutX="432.0" layoutY="18.0" text="PERSONAL DETAILS">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="94.0" layoutY="136.0" text=" Name : ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="name" focusColor="#2196f3" layoutX="240.0" layoutY="120.0" prefHeight="51.0" prefWidth="826.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="843.0" layoutY="197.0" text="Last Name">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="251.0" layoutY="198.0" text="First Name">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="538.0" layoutY="199.0" text="Middle Name">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="288.0" text="Employee Id :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="employeeid" focusColor="#2196f3" layoutX="236.0" layoutY="281.0" prefHeight="39.0" prefWidth="324.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="85.0" layoutY="388.0" text="Address :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="558.0" text="Pincode :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="pincode" focusColor="#2196f3" layoutX="223.0" layoutY="552.0" prefHeight="39.0" prefWidth="324.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="610.0" layoutY="565.0" text="State :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="state" focusColor="#2196f3" layoutX="745.0" layoutY="555.0" prefHeight="39.0" prefWidth="324.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="605.0" layoutY="289.0" text="Job Type :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="jobtype" focusColor="#2196f3" layoutX="750.0" layoutY="284.0" prefHeight="39.0" prefWidth="324.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="next" buttonType="RAISED" layoutX="1012.0" layoutY="659.0" onAction="#personalgui2" prefHeight="66.0" prefWidth="125.0" style="-fx-background-color: #2196F3;" text="NEXT" textFill="#fff4f4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="76.0" layoutY="661.0" prefHeight="62.0" prefWidth="143.0" style="-fx-background-color: #2196F3;" text="GO BACK" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextArea fx:id="address" layoutX="225.0" layoutY="387.0" prefHeight="97.0" prefWidth="853.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextArea>
+                  <Separator layoutY="87.0" prefHeight="2.0" prefWidth="1246.0" />
+               </children>
+            </Group>
+         </center>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </BorderPane>
+   </children>
+</AnchorPane>

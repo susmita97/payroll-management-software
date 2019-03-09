@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="973.0" prefWidth="1285.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="administrator.DeleteRecordsFXMLController">
+    <stylesheets>
+        <URL value="@deleterecordsfxml.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutX="306.0" layoutY="151.0" AnchorPane.bottomAnchor="151.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="151.0">
+         <center>
+            <Group>
+               <children>
+                  <JFXButton fx:id="personald" buttonType="RAISED" layoutX="71.0" layoutY="254.0" onAction="#personald" prefHeight="59.0" prefWidth="264.0" style="-fx-background-color: #ffffff;" text="Delete Personal Details">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="salaryd" buttonType="RAISED" layoutX="73.0" layoutY="371.0" onAction="#salaryd" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;" text="Delete Salary Details">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="jobd" buttonType="RAISED" layoutX="438.0" layoutY="254.0" onAction="#jobd" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;" text="Delete Job Details">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="leaved" buttonType="RAISED" layoutX="439.0" layoutY="370.0" onAction="#leaved" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;" text="Delete Leave Details">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutY="97.0" prefHeight="58.0" prefWidth="221.0" style="-fx-background-color: #ffffff;" text="Enter Employee Id :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="employeeid" layoutX="285.0" layoutY="97.0" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="deleterecords" buttonType="RAISED" layoutX="71.0" layoutY="593.0" onAction="#deleteallrecords" prefHeight="59.0" prefWidth="281.0" style="-fx-background-color: #ffffff;" text="DELETE ALL RECORDS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="searchbutton" buttonType="RAISED" layoutX="597.0" layoutY="97.0" onAction="#searchemployeeid" prefHeight="59.0" prefWidth="166.0" style="-fx-background-color: #ffffff;" text="SEARCH">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="recordavailable" layoutX="8.0" layoutY="481.0" prefHeight="40.0" prefWidth="450.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="goback1" buttonType="RAISED" layoutX="443.0" layoutY="592.0" onAction="#goback" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;" text="GO BACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXComboBox fx:id="combotype" layoutX="219.0" prefHeight="49.0" prefWidth="365.0" promptText="Select type of Account..." style="-fx-background-color: #ffffff;" />
+               </children>
+            </Group>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

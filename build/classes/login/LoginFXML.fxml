@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="973.0" prefWidth="1285.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginFXMLController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <BorderPane layoutX="42.0" layoutY="24.0" prefHeight="905.0" prefWidth="681.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="24.0">
+         <center>
+            <Group style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="usertxt" focusColor="#40a89f" layoutX="35.0" layoutY="439.0" prefHeight="68.0" prefWidth="452.0" promptText="Username" unFocusColor="#0d0303">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="loginb" layoutX="153.0" layoutY="690.0" onAction="#login" prefHeight="76.0" prefWidth="169.0" style="-fx-background-color: #2196F3;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label alignment="CENTER" prefHeight="34.0" prefWidth="370.0" text="Login To Your Account" textFill="#000000c7">
+                     <font>
+                        <Font name="System Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="loginlbl" layoutX="66.0" layoutY="794.0" prefHeight="53.0" prefWidth="254.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXPasswordField fx:id="passtxt" focusColor="#40a89f" layoutX="28.0" layoutY="565.0" prefHeight="68.0" prefWidth="452.0" promptText="Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <ImageView fx:id="image" fitHeight="165.0" fitWidth="184.0" layoutX="174.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@index.jpeg" />
+                     </image>
+                  </ImageView>
+                  <JFXComboBox fx:id="combotype" editable="true" focusColor="#28a0b9" layoutX="34.0" layoutY="343.0" prefHeight="42.0" prefWidth="452.0" promptText="Specify type of account...." />
+                  <JFXButton layoutX="28.0" layoutY="645.0" prefHeight="29.0" prefWidth="158.0" text="Forgot Password?" textFill="#2196f3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Group>
+         </center>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </BorderPane>
+    </children>
+</AnchorPane>

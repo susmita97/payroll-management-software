@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="973.0" prefWidth="1285.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="runsetup.AdminAccFXMLController">
+   <children>
+      <BorderPane layoutX="249.0" layoutY="76.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="42.0">
+         <center>
+            <Group>
+               <children>
+                  <JFXTextField fx:id="usertxt" focusColor="#fff240" layoutX="272.0" layoutY="244.0" prefHeight="68.0" prefWidth="452.0" promptText="Username" unFocusColor="#f4e323">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="18.0" layoutY="244.0" prefHeight="43.0" prefWidth="213.0" text="Enter Username">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="360.0" prefHeight="43.0" prefWidth="213.0" text="Enter Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="7.0" prefHeight="68.0" prefWidth="763.0" text="Create an Administrator Account...">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="nextb" buttonType="RAISED" layoutX="318.0" layoutY="647.0" onAction="#loginnext" prefHeight="76.0" prefWidth="169.0" style="-fx-background-color: #ffe928;" text="Next" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXPasswordField fx:id="passtxt" focusColor="#fff240" layoutX="277.0" layoutY="360.0" prefHeight="68.0" prefWidth="452.0" promptText="Password" unFocusColor="#f4e323">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXPasswordField fx:id="conpasstxt" focusColor="#fff240" layoutX="277.0" layoutY="473.0" prefHeight="68.0" prefWidth="452.0" promptText="Confirm Password" unFocusColor="#f4e323">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <Label layoutX="7.0" layoutY="490.0" prefHeight="43.0" prefWidth="213.0" text="Confirm Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="acccreated" layoutX="83.0" layoutY="577.0" prefHeight="43.0" prefWidth="463.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="133.0" prefHeight="43.0" prefWidth="213.0" text="Enter Employee Id">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="employeeidtxt" focusColor="#fff240" layoutX="269.0" layoutY="126.0" prefHeight="68.0" prefWidth="452.0" promptText="Employee Id" unFocusColor="#f4e323">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </Group>
+         </center>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </BorderPane>
+   </children>
+</AnchorPane>

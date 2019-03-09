@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="973.0" prefWidth="1285.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="administrator.InsertFXML1Controller">
+   <children>
+      <BorderPane layoutX="237.0" layoutY="67.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="237.0" AnchorPane.topAnchor="67.0">
+         <center>
+            <Group>
+               <children>
+                  <JFXComboBox fx:id="combotype" editable="true" focusColor="#28a0b9" layoutX="160.0" layoutY="82.0" prefHeight="42.0" prefWidth="452.0" promptText="Specify type of account...." />
+                  <Label layoutX="2.0" prefHeight="52.0" prefWidth="304.0" text="Select a type of record">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="162.0" prefHeight="52.0" prefWidth="304.0" text="Enter Login Credentials">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="employeeidtxt" focusColor="#40a89f" layoutX="150.0" layoutY="251.0" prefHeight="68.0" prefWidth="452.0" promptText="Employee Id" unFocusColor="#0d0303">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passtxt" focusColor="#40a89f" layoutX="157.0" layoutY="500.0" prefHeight="68.0" prefWidth="452.0" promptText="Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="next" buttonType="RAISED" layoutX="321.0" layoutY="773.0" onAction="#entercredentials" prefHeight="76.0" prefWidth="169.0" style="-fx-background-color: #2196F3;" text="NEXT" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXPasswordField fx:id="conpasstxt" focusColor="#40a89f" layoutX="153.0" layoutY="612.0" prefHeight="68.0" prefWidth="452.0" promptText="Confirm Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXTextField fx:id="usertxt" focusColor="#40a89f" layoutX="150.0" layoutY="373.0" prefHeight="68.0" prefWidth="452.0" promptText="Username" unFocusColor="#0d0303">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </Group>
+         </center>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="973.0" prefWidth="1285.0" styleClass="mainFxmlClass" stylesheets="@AdminViewFXMLcss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manager.ManagerViewFXML2Controller">
+   <children>
+      <BorderPane layoutX="294.0" layoutY="186.0" AnchorPane.bottomAnchor="197.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="186.0">
+         <center>
+            <Group>
+               <children>
+                  <JFXButton fx:id="personald" buttonType="RAISED" layoutX="18.0" layoutY="99.0" onAction="#personald" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;" text="Personal Details">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="salaryd" buttonType="RAISED" layoutX="15.0" layoutY="208.0" onAction="#salaryd" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;" text="Salary Details">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="jobd" buttonType="RAISED" layoutX="310.0" layoutY="100.0" onAction="#jobd" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;" text="Job Details">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="leaved" buttonType="RAISED" layoutX="309.0" layoutY="209.0" onAction="#leaved" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;" text="Leave Details">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="34.0" layoutY="15.0" prefHeight="40.0" prefWidth="221.0" style="-fx-background-color: #ffffff;" text="Enter Employee Id :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="employeeid" layoutX="320.0" layoutY="11.0" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="goback" buttonType="RAISED" layoutX="184.0" layoutY="512.0" onAction="#goback" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #ffffff;" text="GO BACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="searchbutton" buttonType="RAISED" layoutX="625.0" layoutY="11.0" onAction="#searchemployeeid" prefHeight="59.0" prefWidth="166.0" style="-fx-background-color: #ffffff;" text="SEARCH">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="recordavailable" layoutX="38.0" layoutY="353.0" prefHeight="40.0" prefWidth="450.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
