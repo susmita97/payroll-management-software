@@ -26,4 +26,25 @@ Screenshot of the System
 
 ![login](app3.png)
 
+![adminlogin](app4.png)
+
+![chairpersonlogin](apps1.png)
+
+![personaldetails](app14.png)
+
+![personaldetails2](app15.png)
+
+![jobdetails](app16.png)
+
+![salarydetails](app17.png)
+
+![salarydetails](app18.png)
+
+![leavedetails](app19.png)
+
+![resetpassword1](apps5.png)
+
+![resetpassword1](apps6.png)
+
+![payslip](apps9.png)
 
