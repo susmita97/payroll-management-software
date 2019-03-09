@@ -20,4 +20,4 @@ Features
 
 Screenshot of the System
 
-! [splash screen] (app1.png)
+! [splash screen](app1.png)
