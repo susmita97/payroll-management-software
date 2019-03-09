@@ -21,3 +21,9 @@ Features
 Screenshot of the System
 
 ![splash screen](app1.png)
+
+![splash screen2](app2.png)
+
+![login](app3.png)
+
+
