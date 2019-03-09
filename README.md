@@ -44,7 +44,7 @@ Screenshot of the System
 
 ![resetpassword1](apps5.png)
 
-![resetpassword1](apps6.png)
+![resetpassword2](apps6.png)
 
 ![payslip](apps9.png)
 
