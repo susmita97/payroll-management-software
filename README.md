@@ -19,3 +19,5 @@ Features
     Pay-slip generation
 
 Screenshot of the System
+
+![splash screen] (app1.png)
